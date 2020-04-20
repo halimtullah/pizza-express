@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, intial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <title>Solo Pizza</title>
+</head>
+
+<body>
+    <div class="header">
+       
+        <div class="header-right">
+            <a class="active" href="#home">HOME</a>
+            <a href=".about">ABOUT US</a>
+            <a href="menu">MENU</a>
+            <a href="orders">ORDERS</a>
+            <a href="contact">CONTACT</a>
+            <a href="#default" class="logo">SOLO PIZZA</a>
+        </div>
+    </div>
+    <div class="landing">
+        <img src="image/pizza-logo.jpg" height="1000px">
+        <div class="centered">
+            <h1>WELCOME TO SOLO PIZZA </h1>
+            <h2>Love at first slice!</h2>
+        </div>
+    </div>
+
+    <div class="about">
+        <h1>ABOUT US</h1>
+        <p>At Solo Pizza we offer a quality pizza at affordable prices.</p>
+        <p>We also offer thin crust and delicious toppings, perfectly blended from farm fresh.</p>
+        <p>We value our customers and strive meet your expectations.</p>
+    </div>
+
+    <h1>OUR MENU</h1>
+    <div class="menu">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="image/periperi-chkn.jpg" height="300px" width="300px">
+                <h3>Periperi</h3>
+            </div>
+            <div class="col-md-3">
+                <img src="image/chicken-tikka.jpg" height="300px" width="300px">
+                <h3>Chicken Tikka</h3>
+            </div>
+            <div class="col-md-3">
+                <img src="image/Bbq-chicken.jpg" height="300px" width="300px">
+                <h3>BBQ steak</h3>
+            </div>
+            <div class="col-md-3">
+                <img src="image/pizza-img.jpeg" height="300px" width="300px">
+                <h3>Veg Tikka</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="orders">
+        <h2>PLACE YOUR ORDERS</h2>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label> Pizza Types</label>
+                <select class="custom-select custom-select-md mb-3" required="">
+                    <option value="960">Periperi</option>
+                    <option value="950">Chicken and mushroom</option>
+                    <option value="980">Chicken Tikka</option>
+                    <option value="960">Hawaiian</option>
+                    <option value="1000">BBQ Steak</option>
+                    <option value="920">Beef Pizza</option>
+                    <option value="800">Vegy Tikka</option>
+                </select>
+
+                <label>Pick the Sizes:</label>
+                <select class="custom-select custom-select-md mb-3" id="size" required="">
+                    <option value="550">Regular @ sh.550</option>
+                    <option value="900">Medium @ sh.900</option>
+                    <option value="1150">Large @ sh.1150</option>
+                </select>
+
+                <label>Pick your crust</label>
+                <select class="custom-select custom-select-md mb-3" id ="crust" required="">
+                    <option value="100">crispy</option>
+                    <option value="90">Gluten-free</option>
+                    <option value="80">Stuffed</option>
+                </select>
+
+                <label>Choose your toppings</label>
+                <select class="custom-select custom-select-md mb-3" id="toppings" required="">
+                    <option value="60">Pepperoni @ sh. 60</option>
+                    <option value="60">Mushroom @ sh. 60</option>
+                    <option value="80">Extra cheese @ sh. 80</option>
+                    <option value="60">Onions @ sh. 60</option>
+                    <option value="60">tomato @ sh. 60</option>
+                    <option value="100">sausage @ sh. 100</option>
+                    <option value="60">Green pepper @ sh. 60</option>
+                </select>
+
+                <label for="number">Number OF Pizza</label>
+                <input type="number" class="form-control" id="number" min="1" max="20">
+
+                <a href="#summary">
+                    <button type="submit" class="btn btn-success checkout" onclick="getTotalCost();">Checkout</button>
+                </a>
+                <div class="d-block mx auto text-center">
+                    <button class="deliver">Delivery</button>
+                    <button class="pick up">pick up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="image/backgrounds/stock.jpg">
+        <div class="contact">
+            <h8>
+                CONTACT US</h8>
+            <div class="txtb">
+                <label for="name">Name</label>
+                <input type="text" class="" name="" value="" placeholder="your name...">
+            </div>
+            <div class="txtb">
+                <label for="email">Email</label>
+                <input type="email" class="" name="" value="" placeholder="email...">
+            </div>
+            <div class="txtb1">
+                <label for="name">Message</label>
+                <textarea name="comments" id="" cols="30" row="10"></textarea>
+            </div>
+            <div class="txb1">
+                <input type="number" id="phone" class="form-control mb-3" placeholder="phone Number">
+
+            </div>
+
+            <button type="submit" class="submit">Submit</button>
+
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
