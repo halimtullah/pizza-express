@@ -11,7 +11,6 @@ None!
 * JAVASCRIPT
 * BOOTSTRAP
 ## Support and contact details
-Any querry? contact the author via issackhalima@gmail.com
-### License
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-Copyright (c) 2020 **Halima Isack**
+Any querry? contact the author via issackhalima@gmail.com<br>
+<a href="https://github.com/halimtullah/pizza-express/blob/master/LICENSE">License</a><br>
+Copyright (c) MIT 2020 <br>**Halima Isack**
